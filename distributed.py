@@ -29,6 +29,7 @@ vector_partition_spec = jax.sharding.PartitionSpec('devices')
 
 # Consolidates local data into sharded data
 # see: https://jax.readthedocs.io/en/latest/_autosummary/jax.experimental.multihost_utils.host_local_array_to_global_array.html
+# one could also use [make_array_from_single_device_arrays](https://jax.readthedocs.io/en/latest/_autosummary/jax.make_array_from_single_device_arrays.html#jax.make_array_from_single_device_arrays)
 sharded_matrix = multihost_utils.host_local_array_to_global_array(local_matrix, mesh, matrix_partition_spec)
 sharded_vector = multihost_utils.host_local_array_to_global_array(local_vector, mesh, vector_partition_spec)
 if verbose: 
