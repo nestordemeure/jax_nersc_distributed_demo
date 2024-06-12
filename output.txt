@@ -1,0 +1,44 @@
+[0]: local devices: [cuda(id=0)]
+Global devices: [cuda(id=0), cuda(id=1), cuda(id=2), cuda(id=3), cuda(id=4), cuda(id=5), cuda(id=6), cuda(id=7)]
+┌───────────────────────┐
+│                       │
+│                       │
+│                       │
+│                       │
+│         GPU 0         │
+│                       │
+│                       │
+│                       │
+│                       │
+└───────────────────────┘
+sharded_matrix.shape: (40000, 320000)
+sharded_vector.shape: (320000,)
+┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┬─────────┬────────┐
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+│         │         │         │         │         │         │         │        │
+└─────────┴─────────┴─────────┴─────────┴─────────┴─────────┴─────────┴────────┘
+[5]: local devices: [cuda(id=5)]
+[5]: Done.
+[7]: local devices: [cuda(id=7)]
+[7]: Done.
+[6]: local devices: [cuda(id=6)]
+[6]: Done.
+[1]: local devices: [cuda(id=1)]
+[1]: Done.
+[4]: local devices: [cuda(id=4)]
+[4]: Done.
+[2]: local devices: [cuda(id=2)]
+[2]: Done.
+[3]: local devices: [cuda(id=3)]
+[3]: Done.
+sharded_result.shape: (40000,)
+┌───────────────────┐
+│GPU 0,1,2,3,4,5,6,7│
+└───────────────────┘
+[0]: Done.
