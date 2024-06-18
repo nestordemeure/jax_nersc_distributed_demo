@@ -6,6 +6,7 @@
 #SBATCH --constraint=gpu
 #SBATCH --gpus-per-node=4
 #SBATCH --job-name=jax_distributed_container_demo
+#SBATCH --output=output_%j.out
 #SBATCH --account=nstaff
 #SBATCH --image=ghcr.io/nvidia/jax:jax
 

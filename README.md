@@ -24,5 +24,6 @@ See the [NERSC Shifter documentation](https://docs.nersc.gov/development/contain
 ## Files
 
 * `container.slurm` contains our Slurm script,
-* `distributed.py` contains the demo Python script,
-* `output.txt` contains a typical output.
+* `distributed.py` contains the demo Python script ([make_array_from_single_device_arrays](https://jax.readthedocs.io/en/latest/_autosummary/jax.make_array_from_single_device_arrays.html#jax.make_array_from_single_device_arrays) based),
+* `distributed_local_to_global.py` contains an alernative implementation ([multihost_utils.host_local_array_to_global_array](https://jax.readthedocs.io/en/latest/_autosummary/jax.experimental.multihost_utils.host_local_array_to_global_array.html) based),
+* `output.out` contains a typical output.
